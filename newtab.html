@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>New Tab</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="newtab.js"></script>
+</head>
+<body>
+  <main class="card" id="welcome">
+    <h1>Your new tab, your homepage.</h1>
+    <p>Choose a website to display here. The address bar stays ready to type.</p>
+    <a class="button" href="options.html">Choose homepage</a>
+    <p id="error" role="status"></p>
+  </main>
+  <iframe id="homepage" title="Your homepage" hidden></iframe>
+  <a class="settings" href="options.html" aria-label="Homepage settings">Settings</a>
+</body>
+</html>

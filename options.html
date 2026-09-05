@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiet New Tab settings</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="options.js"></script>
+</head>
+<body>
+  <main class="card">
+    <h1>Choose your homepage</h1>
+    <p>Use a dashboard or website that allows embedding.</p>
+    <form id="settings">
+      <label for="url">Homepage URL</label>
+      <input id="url" name="url" type="url" placeholder="https://example.com" required>
+      <div class="buttons">
+        <button type="submit">Save homepage</button>
+        <button id="reset" type="button" class="secondary">Reset</button>
+      </div>
+    </form>
+    <p id="status" role="status" aria-live="polite"></p>
+    <p>Your choice stays in this browser. Some websites block embedding or require cookies that Chrome may restrict.</p>
+    <p><a href="newtab.html">Preview homepage</a></p>
+  </main>
+</body>
+</html>
